@@ -58,23 +58,34 @@ Effisend is a Mobile-First wallet, cash out ramp and Point of Sale Superapp. We 
 
 - Thanks to the [Stripe APIs](https://stripe.com/docs/api) we can manage users, checkout, swap and KYC of our app.
 
-# Main App Screens:
+# Crossmint:
 
-Nuestra aplicacion esta echa con el fin de ser una wallet sencilla para usuarios nuevos en crypto y poder ofrecer incluso servicios complejos como lo son el swap y pagos mediante solana pay, solo con un par de clics, algunas funciones principales que tenemos son las siguientes.
+Todos los NFTs usados en el proyecto se realizaron mediante Crossmint, se utilizo esta plataforma ya que permite el mint masivo de NFTs, lo cual permite a grandes empresas poder realizar este tipo de campañas, este proceso es mucho mas sencillo que relizar que usar un proyecto como [CandyMachine](https://docs.metaplex.com/programs/candy-machine).
 
-- Management de crypto assets sobre la red de solana o algunas de las EVMs mas importantes.
+<img src="https://i.ibb.co/MVgjS6y/image.png">
 
-  <img src="https://i.ibb.co/6PRpyBm/vlcsnap-2023-08-20-18h04m29s143.png" width="32%"> <img src="https://i.ibb.co/mRt3vr8/Image.png" width="32%"> <img src="https://i.ibb.co/Zzs94JH/vlcsnap-2023-08-20-19h11m34s137.png" width="32%"> 
+El proceso para realizar el mint de una coleccion NFT solo requiere 3 sencillos pasos.
 
-- Recepcion sencilla de pagos mediante QR, ya sea transferencia directa o mediante servicios como SolanaPay y Wallet Connect.
+  - Llenando la metadata del NFT.
+      <img src="https://i.ibb.co/4fvq751/Screenshot-2023-08-19-174150.png">
 
-  <img src="https://i.ibb.co/v3W4QVP/Screenshot-20230820-191642.png" width="32%"> <img src="https://i.ibb.co/sQ7zJFX/Screenshot-20230820-191646.png" width="32%"> <img src="https://i.ibb.co/hMDnjR7/Screenshot-20230820-191651.png" width="32%"> 
+  -  Mintando y mandando el NFT.
+      <img src="https://i.ibb.co/WDFjBHk/Screenshot-2023-08-19-174137.png">
 
-- Conectividad a Dapps (EVM) y pagos con Solana Pay ya sea nativamente con la wallet o usando el wallet mobile adapter y seedvault.
+  -  La coleccion completa de los nfts es la siguiente.
+      <img src="https://i.ibb.co/bRdF30R/Screenshot-2023-08-19-174314.png">
 
-  <img src="https://i.ibb.co/wLKb6sX/vlcsnap-2023-08-20-19h25m59s606.png" width="32%"> <img src="https://i.ibb.co/bPfXM6X/vlcsnap-2023-08-20-19h26m08s054.png" width="32%"> <img src="https://i.ibb.co/1rYChh3/vlcsnap-2023-08-20-19h25m08s452.png" width="32%"> 
+- Ya que es una coleccion en Mainnet esta puede verse desde OpenSea.
 
-- Swap mediante Jupiter Swap (Solana) o Uniswap (EVMs).
+  https://opensea.io/collection/effisend-coupons-1
+
+# Jupiter:
+
+Todo el proceso de swap en nuestra app es realizado por Jupiter y es indispensable que los usuarios sean capaces que realizar estos cambios de SOL a USD (stablecoins) rapidamente ya que los negocios tradicionales aun ocupan que se realicen los pagos en stablecoins pegadas al dolar como lo son USDC.
+
+<img src="https://i.ibb.co/Kxnjhn4/image.png">
+
+- El swap mediante Jupiter Swap (Solana) es muy sencillo gracias a sus API y una UI sencilla e intuitiva.
 
   <img src="https://i.ibb.co/xMqbTkt/vlcsnap-2023-08-20-19h51m20s255.png" width="32%"> <img src="https://i.ibb.co/YddWM1h/vlcsnap-2023-08-20-19h49m23s883.png" width="32%"> <img src="https://i.ibb.co/B3SmF7y/vlcsnap-2023-08-20-19h49m36s188.png" width="32%"> 
 
@@ -140,24 +151,29 @@ Nuestra aplicacion esta echa con el fin de ser una wallet sencilla para usuarios
         fetch("https://quote-api.jup.ag/v4/swap", requestOptions)
           .then((response) => response.json())
 
+# Main App Screens:
+
+Nuestra aplicacion esta echa con el fin de ser una wallet sencilla para usuarios nuevos en crypto y poder ofrecer incluso servicios complejos como lo son el swap y pagos mediante solana pay, solo con un par de clics, algunas funciones principales que tenemos son las siguientes.
+
+- Management de crypto assets sobre la red de solana o algunas de las EVMs mas importantes.
+
+  <img src="https://i.ibb.co/6PRpyBm/vlcsnap-2023-08-20-18h04m29s143.png" width="32%"> <img src="https://i.ibb.co/mRt3vr8/Image.png" width="32%"> <img src="https://i.ibb.co/Zzs94JH/vlcsnap-2023-08-20-19h11m34s137.png" width="32%"> 
+
+- Recepcion sencilla de pagos mediante QR, ya sea transferencia directa o mediante servicios como SolanaPay y Wallet Connect.
+
+  <img src="https://i.ibb.co/v3W4QVP/Screenshot-20230820-191642.png" width="32%"> <img src="https://i.ibb.co/sQ7zJFX/Screenshot-20230820-191646.png" width="32%"> <img src="https://i.ibb.co/hMDnjR7/Screenshot-20230820-191651.png" width="32%"> 
+
+- Conectividad a Dapps (EVM) y pagos con Solana Pay ya sea nativamente con la wallet o usando el wallet mobile adapter y seedvault.
+
+  <img src="https://i.ibb.co/wLKb6sX/vlcsnap-2023-08-20-19h25m59s606.png" width="32%"> <img src="https://i.ibb.co/bPfXM6X/vlcsnap-2023-08-20-19h26m08s054.png" width="32%"> <img src="https://i.ibb.co/1rYChh3/vlcsnap-2023-08-20-19h25m08s452.png" width="32%"> 
+
+- La seccion de Swap de nuestra aplicacion utiliza los servicios de DeFi de Jupiter Swap (Solana) y Uniswap (EVMs).
+
+  <img src="https://i.ibb.co/xMqbTkt/vlcsnap-2023-08-20-19h51m20s255.png" width="32%"> <img src="https://i.ibb.co/YddWM1h/vlcsnap-2023-08-20-19h49m23s883.png" width="32%"> <img src="https://i.ibb.co/B3SmF7y/vlcsnap-2023-08-20-19h49m36s188.png" width="32%"> 
+
 - Management de NFTs y en este caso cupones para obtener grandes descuentos con empresas.
 
   <img src="https://i.ibb.co/KbNXcwk/vlcsnap-2023-08-20-19h36m01s095.png" width="32%"> <img src="https://i.ibb.co/CsqRWNq/vlcsnap-2023-08-20-19h36m10s036.png" width="32%"> <img src="https://i.ibb.co/vJbWVBH/vlcsnap-2023-08-20-19h36m26s330.png" width="32%">
-
-- Todos los NFTs usados en el proyecto se realizaron mediante Crossmint, se utilizo esta plataforma ya que permite el mint masivo de NFTs, lo cual permite a grandes empresas poder realizar este tipo de campañas, este proceso es mucho mas sencillo que relizar que usar un proyecto como [CandyMachine](https://docs.metaplex.com/programs/candy-machine).
-
-  - Llenando la metadata del NFT.
-      <img src="https://i.ibb.co/4fvq751/Screenshot-2023-08-19-174150.png">
-
-  -  Mintando y mandando el NFT.
-      <img src="https://i.ibb.co/WDFjBHk/Screenshot-2023-08-19-174137.png">
-
-  -  La coleccion completa de los nfts es la siguiente.
-      <img src="https://i.ibb.co/bRdF30R/Screenshot-2023-08-19-174314.png">
-
-- Ya que es una coleccion en Mainnet esta puede verse desde OpenSea.
-
-  https://opensea.io/collection/effisend-coupons-1
 
 # Point of Sale application:
 

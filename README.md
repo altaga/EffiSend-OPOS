@@ -66,40 +66,40 @@ Effisend is a Mobile-First wallet, cash out ramp and Point of Sale Superapp. We 
 
 # Crossmint:
 
-Todos los NFTs usados en el proyecto se realizaron mediante Crossmint, se utilizo esta plataforma ya que permite el mint masivo de NFTs, lo cual permite a grandes empresas poder realizar este tipo de campañas, este proceso es mucho mas sencillo que relizar que usar un proyecto como [CandyMachine](https://docs.metaplex.com/programs/candy-machine).
+All the NFTs used in the project were minted and delivered through Crossmint, this platform was used since it allows the massive mint of NFTs, which allows large companies to carry out this type of campaign. This process is much easier than using a project such as [CandyMachine](https://docs.metaplex.com/programs/candy-machine).
 
 <img src="https://i.ibb.co/MVgjS6y/image.png">
 
-El proceso para realizar el mint de una coleccion NFT solo requiere 3 sencillos pasos.
+The process to mint an NFT collection only requires 3 easy steps.
 
-  - Llenando la metadata del NFT.
+  - Filling the NFT metadata.
       <img src="https://i.ibb.co/4fvq751/Screenshot-2023-08-19-174150.png">
 
-  -  Mintando y mandando el NFT.
+  -  Lying and commanding the NFT.
       <img src="https://i.ibb.co/WDFjBHk/Screenshot-2023-08-19-174137.png">
 
-  -  La coleccion completa de los nfts es la siguiente.
+  -  The complete collection of the nfts is the following:
       <img src="https://i.ibb.co/bRdF30R/Screenshot-2023-08-19-174314.png">
 
-- Ya que es una coleccion en Mainnet esta puede verse desde OpenSea.
+- Since it is a collection on Mainnet it can be seen from OpenSea.
 
   https://opensea.io/collection/effisend-coupons-1
 
 # Jupiter:
 
-Todo el proceso de swap en nuestra app es realizado por Jupiter y es indispensable que los usuarios sean capaces que realizar estos cambios de SOL a USD (stablecoins) rapidamente ya que los negocios tradicionales aun ocupan que se realicen los pagos en stablecoins pegadas al dolar como lo son USDC.
+The entire swap process in our app is carried out by Jupiter and it is essential that users are able to make these changes from SOL to USD (stablecoins) quickly since traditional businesses still need to make payments in stablecoins attached to the dollar as they are USDC.
 
 <img src="https://i.ibb.co/Kxnjhn4/image.png">
 
-- El swap mediante Jupiter Swap (Solana) es muy sencillo gracias a sus API y una UI sencilla e intuitiva.
+- Swapping through Jupiter Swap (Solana) is very easy thanks to its APIs and a simple and intuitive UI.
 
   <img src="https://i.ibb.co/xMqbTkt/vlcsnap-2023-08-20-19h51m20s255.png" width="32%"> <img src="https://i.ibb.co/YddWM1h/vlcsnap-2023-08-20-19h49m23s883.png" width="32%"> <img src="https://i.ibb.co/B3SmF7y/vlcsnap-2023-08-20-19h49m36s188.png" width="32%"> 
 
-- Los Swaps pueden realizarse nativamente desde la app o usando el seedvault en caso de tenerlo.
-
+- Swaps can be done natively from the app or using the seedvault if you have one.
+  
   <img src="https://i.ibb.co/vsHg9Vp/vlcsnap-2023-08-20-19h49m42s994.png" width="32%"> <img src="https://i.ibb.co/gZ5HgqB/vlcsnap-2023-08-20-19h49m50s141.png" width="32%"> <img src="https://i.ibb.co/R9yZzV8/vlcsnap-2023-08-20-19h52m26s268.png" width="32%"> 
 
-- Todo el codigo para generar el quote y obtener la transaccion para el swap es la siguiente y su implementacion en codigo es el siguiente [LINK](./EffiSend_RN/src/screens/swapSimple/swapSimple.js).
+- All the code to generate the quote and obtain the transaction for the swap is the following and its implementation in code is the following [LINK](./EffiSend_RN/src/screens/swapSimple/swapSimple.js).
 
   - Quote: 
 
@@ -159,32 +159,32 @@ Todo el proceso de swap en nuestra app es realizado por Jupiter y es indispensab
 
 # Main App Screens:
 
-Nuestra aplicacion esta echa con el fin de ser una wallet sencilla para usuarios nuevos en crypto y poder ofrecer incluso servicios complejos como lo son el swap y pagos mediante solana pay, solo con un par de clics, algunas funciones principales que tenemos son las siguientes.
+Our application is made in order to be a simple wallet for new users in crypto and to be able to offer even complex services such as swap and payments through solana pay, just with a couple of clicks, some main functions that we have are the following.
 
-- Management de crypto assets sobre la red de solana o algunas de las EVMs mas importantes.
+- Management of crypto assets on the solana network or some of the most important EVMs.
 
   <img src="https://i.ibb.co/6PRpyBm/vlcsnap-2023-08-20-18h04m29s143.png" width="32%"> <img src="https://i.ibb.co/mRt3vr8/Image.png" width="32%"> <img src="https://i.ibb.co/Zzs94JH/vlcsnap-2023-08-20-19h11m34s137.png" width="32%"> 
 
-- Recepcion sencilla de pagos mediante QR, ya sea transferencia directa o mediante servicios como SolanaPay y Wallet Connect.
+- Easy receipt of payments through QR, either direct transfer or through services such as SolanaPay and Wallet Connect.
 
   <img src="https://i.ibb.co/v3W4QVP/Screenshot-20230820-191642.png" width="32%"> <img src="https://i.ibb.co/sQ7zJFX/Screenshot-20230820-191646.png" width="32%"> <img src="https://i.ibb.co/hMDnjR7/Screenshot-20230820-191651.png" width="32%"> 
 
-- Conectividad a Dapps (EVM) y pagos con Solana Pay ya sea nativamente con la wallet o usando el wallet mobile adapter y seedvault.
-
+- Connectivity to Dapps (EVM) and payments with Solana Pay either natively with the wallet or using the wallet mobile adapter and seedvault.
+  
   <img src="https://i.ibb.co/wLKb6sX/vlcsnap-2023-08-20-19h25m59s606.png" width="32%"> <img src="https://i.ibb.co/bPfXM6X/vlcsnap-2023-08-20-19h26m08s054.png" width="32%"> <img src="https://i.ibb.co/1rYChh3/vlcsnap-2023-08-20-19h25m08s452.png" width="32%"> 
 
-- La seccion de Swap de nuestra aplicacion utiliza los servicios de DeFi de Jupiter Swap (Solana) y Uniswap (EVMs).
+- The Swap section of our app uses the DeFi services of Jupiter Swap (Solana) and Uniswap (EVMs).
 
   <img src="https://i.ibb.co/xMqbTkt/vlcsnap-2023-08-20-19h51m20s255.png" width="32%"> <img src="https://i.ibb.co/YddWM1h/vlcsnap-2023-08-20-19h49m23s883.png" width="32%"> <img src="https://i.ibb.co/B3SmF7y/vlcsnap-2023-08-20-19h49m36s188.png" width="32%"> 
 
-- Management de NFTs y en este caso cupones para obtener grandes descuentos con empresas.
+- Management of NFTs and in this case coupons to obtain great discounts with companies.
 
   <img src="https://i.ibb.co/KbNXcwk/vlcsnap-2023-08-20-19h36m01s095.png" width="32%"> <img src="https://i.ibb.co/CsqRWNq/vlcsnap-2023-08-20-19h36m10s036.png" width="32%"> <img src="https://i.ibb.co/vJbWVBH/vlcsnap-2023-08-20-19h36m26s330.png" width="32%">
 
 # Point of Sale application:
 
 - The Point of Sale application is more focused on the simple reception of payments and an interface focused on generating payment orders through QR or NFC.
-
+  
   <img src="https://i.ibb.co/j6kYRWK/Screenshot-2022-08-12-153401.png" width="32%">
   <img src="https://i.ibb.co/bHxqD2N/Screenshot-2022-08-12-153442.png" width="32%">
 
@@ -199,7 +199,7 @@ Nuestra aplicacion esta echa con el fin de ser una wallet sencilla para usuarios
   <img src="https://i.ibb.co/s30hpvt/vlcsnap-2023-08-20-20h02m22s533.png" width="32%">
   <img src="https://i.ibb.co/xYxC0B8/vlcsnap-2023-08-20-20h02m31s300.png" width="32%">
 
-- Automaticamente si la wallet que realiza el pago tiene el NFT correpondiente a el descuento, automaticamente el POS descontara el porcentaje.
+- Automatically if the wallet that makes the payment has the NFT corresponding to the discount, the POS will automatically discount the percentage.
 
   <img src="https://i.ibb.co/CsqRWNq/vlcsnap-2023-08-20-19h36m10s036.png" width="32%">
   <img src="https://i.ibb.co/vJbWVBH/vlcsnap-2023-08-20-19h36m26s330.png" width="32%">
@@ -223,22 +223,11 @@ This application is directed at those who cannot benefit directly from cryptocur
 
 I think we can make the jump from those systems almost directly to self-banking, such as the jump that was made in some parts of Africa and even here in Latin America from skipping telephone landlines directly to Mobile phones. If that jump was made from that type of technology this one can be analogous and possible. 
 
-Perhaps the most important feedback we have obtained is that we have to show how our application will ensure the enforcement of anti-laundering laws. 
-
-We will do that will strong KYC. And at the same time Mexico has published since 2018 strong laws to manage that including its fintech law.
-
-https://en.legalparadox.com/post/the-definitive-guide-mexican-fintech-law-a-look-3-years-after-its-publication#:~:text=The%20Mexican%20FinTech%20Law%20was,as%20Artificial%20Intelligence%2C%20Blockchain%2C%20collaborative
-
-Quoting: " The Mexican FinTech Law was one of the first regulatory bodies created specifically to promote innovation, the transformation of traditional banking and credit financial services that would even allow the possibility of incorporating exponential technology such as Artificial Intelligence, Blockchain, collaborative economies and peer-to-peer financial services in secure regulatory spaces. "
-
-All of this was a silent revolution that happened in this jurisdiction after the HSBC money-laundering scandal that included cartels and some other nefarious individuals. 
-https://www.investopedia.com/stock-analysis/2013/investing-news-for-jan-29-hsbcs-money-laundering-scandal-hbc-scbff-ing-cs-rbs0129.aspx
-
 Thus, the need for Decentralized solutions.
 
 Security and identity verification of the clients who use the app is paramount for us, and to thrive in this market we need this to emulate incumbents such as Bitso. We think our technology is mature enough if we compare with these incumbents and much safer. 
 
-Regarding the application we would like to test it with real Capital perhaps in Q4 2022.
+Regarding the application we are launching in amonth approximatelly and raising Capital perhaps in Q1-Q2 2024.
 
 Hopefully you liked the Mobile DApp and Point of Sale.
 

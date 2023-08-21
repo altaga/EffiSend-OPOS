@@ -1,6 +1,6 @@
 # EffiSend-OPOS
  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [<img src="https://img.shields.io/badge/View-Video-red">](pending)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [<img src="https://img.shields.io/badge/View-Video-red">](https://www.youtube.com/watch?v=-U9FUJxsdGY)
 
 <img src="https://i.ibb.co/52MCK0x/logo-Splash.png">
 
@@ -14,7 +14,7 @@ POS App APK: [LINK](./EffiSendPOS_APK/app-release.apk)
 
 ## Here is our main demo video: 
 
-[![Demo](https://i.ibb.co/g4W3ypx/image.png)](pending)
+[![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://www.youtube.com/watch?v=-U9FUJxsdGY)
 
 # Introduction and Problem
 
